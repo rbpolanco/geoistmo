@@ -1,0 +1,9 @@
+{
+  "name": "GeoIstmo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "forwardPorts": [3000],
+  "portsAttributes": { "3000": { "label": "GeoIstmo", "onAutoForward": "openBrowser" } },
+  "postCreateCommand": "npm install && npm run init-db",
+  "postAttachCommand": "echo 'Para iniciar GeoIstmo escribe: npm start'",
+  "customizations": { "codespaces": { "openFiles": ["README.md"] } }
+}
