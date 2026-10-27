@@ -1,0 +1,21 @@
+{
+  "name": "geoistmo",
+  "version": "0.3.0-alfa",
+  "description": "GeoIstmo - Software educativo de Geografía Humana, Económica y Política (12.º grado, Panamá). Versión alfa del Avance 3.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "init-db": "node --disable-warning=ExperimentalWarning server/db/init.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/db/init.js --reset",
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "test": "node --no-warnings --test --test-concurrency=1 \"tests/**/*.test.js\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0"
+  }
+}
